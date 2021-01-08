@@ -11,6 +11,7 @@
 		FA96161025A8E965006B8F97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96160F25A8E965006B8F97 /* ContentView.swift */; };
 		FA96161225A8E966006B8F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA96161125A8E966006B8F97 /* Assets.xcassets */; };
 		FA96161525A8E966006B8F97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA96161425A8E966006B8F97 /* Preview Assets.xcassets */; };
+		FA96161E25A8EA27006B8F97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96161D25A8EA27006B8F97 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FA96161125A8E966006B8F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA96161425A8E966006B8F97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA96161625A8E966006B8F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA96161D25A8EA27006B8F97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		FA96160C25A8E965006B8F97 /* netflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				FA96162025A8EA40006B8F97 /* Home */,
 				FA96160D25A8E965006B8F97 /* netflixCloneApp.swift */,
 				FA96160F25A8E965006B8F97 /* ContentView.swift */,
 				FA96161125A8E966006B8F97 /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				FA96161425A8E966006B8F97 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA96162025A8EA40006B8F97 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FA96161D25A8EA27006B8F97 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA96161E25A8EA27006B8F97 /* HomeView.swift in Sources */,
 				FA96161025A8E965006B8F97 /* ContentView.swift in Sources */,
 				FA96160E25A8E965006B8F97 /* netflixCloneApp.swift in Sources */,
 			);
