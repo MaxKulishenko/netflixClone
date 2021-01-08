@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct  : View {
+struct  HomeView: View {
     var body: some View {
         Text("Welcome to netflix")
     }

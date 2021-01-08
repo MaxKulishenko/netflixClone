@@ -13,6 +13,8 @@
 		FA96161525A8E966006B8F97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA96161425A8E966006B8F97 /* Preview Assets.xcassets */; };
 		FA96162A25A8EDBB006B8F97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96162925A8EDBB006B8F97 /* HomeView.swift */; };
 		FA96162E25A8EF89006B8F97 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA96162D25A8EF89006B8F97 /* KingfisherSwiftUI */; };
+		FA96163125A8F001006B8F97 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96163025A8F001006B8F97 /* Movie.swift */; };
+		FA96163425A8F1CB006B8F97 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96163325A8F1CB006B8F97 /* StandardHomeMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FA96161425A8E966006B8F97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA96161625A8E966006B8F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA96162925A8EDBB006B8F97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = SOURCE_ROOT; };
+		FA96163025A8F001006B8F97 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FA96163325A8F1CB006B8F97 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				FA96160D25A8E965006B8F97 /* netflixCloneApp.swift */,
 				FA96160F25A8E965006B8F97 /* ContentView.swift */,
 				FA96162925A8EDBB006B8F97 /* HomeView.swift */,
+				FA96163025A8F001006B8F97 /* Movie.swift */,
+				FA96163325A8F1CB006B8F97 /* StandardHomeMovie.swift */,
 				FA96161125A8E966006B8F97 /* Assets.xcassets */,
 				FA96161625A8E966006B8F97 /* Info.plist */,
 				FA96161325A8E966006B8F97 /* Preview Content */,
@@ -151,6 +157,8 @@
 			files = (
 				FA96162A25A8EDBB006B8F97 /* HomeView.swift in Sources */,
 				FA96161025A8E965006B8F97 /* ContentView.swift in Sources */,
+				FA96163425A8F1CB006B8F97 /* StandardHomeMovie.swift in Sources */,
+				FA96163125A8F001006B8F97 /* Movie.swift in Sources */,
 				FA96160E25A8E965006B8F97 /* netflixCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
