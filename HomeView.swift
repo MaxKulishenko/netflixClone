@@ -9,7 +9,10 @@ import SwiftUI
 
 struct  HomeView: View {
     var body: some View {
-        Text("Welcome to netflix")
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        }
     }
 }
 
