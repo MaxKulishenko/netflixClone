@@ -16,6 +16,7 @@
 		FA96163125A8F001006B8F97 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96163025A8F001006B8F97 /* Movie.swift */; };
 		FA96163425A8F1CB006B8F97 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96163325A8F1CB006B8F97 /* StandardHomeMovie.swift */; };
 		FA96163725A8F28C006B8F97 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96163625A8F28C006B8F97 /* GlobalHelpers.swift */; };
+		FA96163A25A8F727006B8F97 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96163925A8F727006B8F97 /* HomeVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FA96163025A8F001006B8F97 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		FA96163325A8F1CB006B8F97 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		FA96163625A8F28C006B8F97 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		FA96163925A8F727006B8F97 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				FA96160D25A8E965006B8F97 /* netflixCloneApp.swift */,
 				FA96160F25A8E965006B8F97 /* ContentView.swift */,
 				FA96162925A8EDBB006B8F97 /* HomeView.swift */,
+				FA96163925A8F727006B8F97 /* HomeVM.swift */,
 				FA96163025A8F001006B8F97 /* Movie.swift */,
 				FA96163325A8F1CB006B8F97 /* StandardHomeMovie.swift */,
 				FA96163625A8F28C006B8F97 /* GlobalHelpers.swift */,
@@ -160,6 +163,7 @@
 			files = (
 				FA96163725A8F28C006B8F97 /* GlobalHelpers.swift in Sources */,
 				FA96162A25A8EDBB006B8F97 /* HomeView.swift in Sources */,
+				FA96163A25A8F727006B8F97 /* HomeVM.swift in Sources */,
 				FA96161025A8E965006B8F97 /* ContentView.swift in Sources */,
 				FA96163425A8F1CB006B8F97 /* StandardHomeMovie.swift in Sources */,
 				FA96163125A8F001006B8F97 /* Movie.swift in Sources */,
