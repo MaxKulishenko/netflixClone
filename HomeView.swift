@@ -21,6 +21,8 @@ struct  HomeView: View {
                         VStack {
                             HStack {
                                 Text(category)
+                                    .font(.title3)
+                                    .bold()
                                 Spacer()
                             }
                             
