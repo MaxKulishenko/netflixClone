@@ -19,7 +19,7 @@ struct TopMoviePreview: View {
             if index + 1 != catCount {
                 return false
             }
-             
+            
         }
         return true
     }
@@ -32,11 +32,11 @@ struct TopMoviePreview: View {
             
             VStack {
                 Spacer()
-               
+                
                 HStack{
                     ForEach(movie.categories, id: \.self) { category in
                         
-                          HStack {
+                        HStack {
                             Text(category)
                             
                             if !isCategoryLast(category) {
@@ -45,10 +45,10 @@ struct TopMoviePreview: View {
                                     .font(.system(size: 3))
                             }
                         }
-
+                        
                     }
                 }
-        
+                
                 Text("Row of buttons")
             }
             
