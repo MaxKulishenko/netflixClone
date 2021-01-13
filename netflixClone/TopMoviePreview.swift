@@ -9,15 +9,37 @@ import SwiftUI
 import KingfisherSwiftUI
 
 struct TopMoviePreview: View {
-    
     var movie: Movie
+    
+    
+    
     var body: some View {
-        VStack {
+        ZStack {
             KFImage(movie.thumbnailURL)
                 .resizable()
-                .scaledToFill()
                 .clipped()
+            
+            VStack {
+                Spacer()
+               
+                HStack{
+                    ForEach(movie.categories, id: \.self) { category in
+                        
+                          HStack {
+                            Text(category)
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(.blue)
+                                .font(.system(size: 3))
+                        }
+
+                    }
+                }
+        
+                Text("Row of buttons")
+            }
+            
         }
+        .foregroundColor(.white)
     }
 }
 
