@@ -11,7 +11,6 @@ struct WhitePauseButton: View {
     
     var text: String
     
-    
     var imageName: String
     
     var action: () -> Void
@@ -21,16 +20,16 @@ struct WhitePauseButton: View {
             action()
         }, label: {
             HStack {
-                
                 Spacer()
+                
                 Image(systemName: imageName)
                     .font(.headline)
                 
                 
                 Text(text)
-                    
-                    .font(.system(size: 16 ))
                     .bold()
+                    .font(.system(size: 16))
+                    
                 
                 Spacer()
             }

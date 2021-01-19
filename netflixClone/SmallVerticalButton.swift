@@ -36,6 +36,8 @@ struct SmallVerticalButton: View {
             VStack {
                 Image(systemName: imageName)
                     .foregroundColor(.white)
+                    .padding(0.1)
+                
                 
                 Text(text)
                     .foregroundColor(.white)
@@ -48,6 +50,7 @@ struct SmallVerticalButton: View {
 
 struct SmallVerticalButton_Previews: PreviewProvider {
     static var previews: some View {
+        
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
@@ -55,7 +58,7 @@ struct SmallVerticalButton_Previews: PreviewProvider {
             SmallVerticalButton(text: "My List",
                                 isOnImage: "checkmark",
                                 isOffImage: "plus",
-                                isOn: true) {
+                                isOn: false) {
                 print("Tapped")
             }
             

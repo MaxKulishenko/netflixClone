@@ -12,15 +12,14 @@ struct TopMoviePreview: View {
     var movie: Movie
     
     func isCategoryLast(_ cat: String) -> Bool {
-        let catCount = movie.categories.count // 4
+        let catCount = movie.categories.count
         
-        // if 3+1 !=4
         if let index = movie.categories.firstIndex(of: cat) {
             if index + 1 != catCount {
                 return false
             }
-            
         }
+        
         return true
     }
     
@@ -28,12 +27,13 @@ struct TopMoviePreview: View {
         ZStack {
             KFImage(movie.thumbnailURL)
                 .resizable()
+                .scaledToFill()
                 .clipped()
             
             VStack {
                 Spacer()
                 
-                HStack{
+                HStack {
                     ForEach(movie.categories, id: \.self) { category in
                         
                         HStack {
@@ -46,11 +46,10 @@ struct TopMoviePreview: View {
                                     .font(.system(size: 3))
                             }
                         }
-                        
                     }
                 }
                 
-                HStack{
+                HStack {
                     Spacer()
                     
                     SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
@@ -73,6 +72,7 @@ struct TopMoviePreview: View {
                     Spacer()
                 }
             }
+            
             
         }
         .foregroundColor(.white)
