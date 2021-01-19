@@ -17,6 +17,9 @@ struct  HomeView: View {
             //main v-stack
             ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false)             {
                 LazyVStack {
+                    
+                    TopMoviePreview(movie: exampleMovie1)
+                    
                     ForEach(vm.allCategories, id: \.self ) { category in
                         VStack {
                             HStack {

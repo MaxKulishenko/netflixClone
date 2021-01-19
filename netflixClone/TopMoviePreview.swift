@@ -59,8 +59,11 @@ struct TopMoviePreview: View {
                     
                     Spacer()
                     
-                    Text("Play button")
-                     
+                    WhitePauseButton(text: "Play", imageName: "play.fill") {
+                        //
+                    }
+                    .frame(width: 120)
+                    
                     Spacer()
                     
                     SmallVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true) {
