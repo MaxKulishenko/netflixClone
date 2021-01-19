@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5648B025B78F1D0036B21D /* WhitePauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5648AF25B78F1D0036B21D /* WhitePauseButton.swift */; };
 		FA5DF79F25AF104B00E3501B /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DF79E25AF104B00E3501B /* TopMoviePreview.swift */; };
 		FA613C9D25AF32B7002D6AFB /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA613C9C25AF32B7002D6AFB /* SmallVerticalButton.swift */; };
 		FA96160E25A8E965006B8F97 /* netflixCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96160D25A8E965006B8F97 /* netflixCloneApp.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA5648AF25B78F1D0036B21D /* WhitePauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePauseButton.swift; sourceTree = "<group>"; };
 		FA5DF79E25AF104B00E3501B /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		FA613C9C25AF32B7002D6AFB /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		FA96160A25A8E965006B8F97 /* netflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				FA96162925A8EDBB006B8F97 /* HomeView.swift */,
 				FA5DF79E25AF104B00E3501B /* TopMoviePreview.swift */,
 				FA613C9C25AF32B7002D6AFB /* SmallVerticalButton.swift */,
+				FA5648AF25B78F1D0036B21D /* WhitePauseButton.swift */,
 				FA96163925A8F727006B8F97 /* HomeVM.swift */,
 				FA96163025A8F001006B8F97 /* Movie.swift */,
 				FA96163325A8F1CB006B8F97 /* StandardHomeMovie.swift */,
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5648B025B78F1D0036B21D /* WhitePauseButton.swift in Sources */,
 				FA96163725A8F28C006B8F97 /* GlobalHelpers.swift in Sources */,
 				FA96162A25A8EDBB006B8F97 /* HomeView.swift in Sources */,
 				FA96163A25A8F727006B8F97 /* HomeVM.swift in Sources */,
