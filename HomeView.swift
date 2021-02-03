@@ -24,7 +24,7 @@ struct  HomeView: View {
                         Image("netflix_logo")
                             .resizable()
                             .scaledToFit()
-                        
+                            .frame(width: 50)
                         Spacer()
                         
                         Text("TV Shows")
@@ -44,7 +44,7 @@ struct  HomeView: View {
                     TopMoviePreview(movie: exampleMovie1)
                         .frame(width: screen.width)
                         .padding(.top, -110)
-                        .zIndex(-1)  
+                        .zIndex(-1)
                     
                 
                     
