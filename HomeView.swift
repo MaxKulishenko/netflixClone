@@ -20,9 +20,33 @@ struct  HomeView: View {
             ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false)             {
                 LazyVStack {
                     
+                    HStack{
+                        Image("netflix_logo")
+                            .resizable()
+                            .scaledToFit()
+                        
+                        Spacer()
+                        
+                        Text("TV Shows")
+                        
+                        Spacer()
+                        
+                        Text("Movies")
+                        
+                        Spacer()
+                        
+                        Text("My List")
+                    }
+                    .background(Color.red)
+                    .padding(.leading, 10)
+                    .padding(.trailing, 30)
+                    
                     TopMoviePreview(movie: exampleMovie1)
                         .frame(width: screen.width)
                         .padding(.top, -110)
+                        .zIndex(-1)  
+                    
+                
                     
                     ForEach(vm.allCategories, id: \.self ) { category in
                         VStack {
