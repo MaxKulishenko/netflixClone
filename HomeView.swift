@@ -107,7 +107,6 @@ struct TopRowButtons: View {
             })
             .buttonStyle(PlainButtonStyle())
         }
-        .background(Color.black)
         .padding(.leading, 10)
         .padding(.trailing, 30)
     }
