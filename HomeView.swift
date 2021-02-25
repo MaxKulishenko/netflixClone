@@ -16,28 +16,54 @@ struct  HomeView: View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
             //main v-stack
-            ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false)             {
+            ScrollView(showsIndicators: false) {
                 LazyVStack {
-                    
+                   
                     HStack{
-                        Image("netflix_logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50)
+                        Button(action: {
+                            //
+                        }, label: {
+                            Image("netflix_logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50)
+                            
+                        })
+                        .buttonStyle(PlainButtonStyle())
+                        
                         Spacer()
                         
-                        Text("TV Shows")
+                        Button(action: {
+                            //
+                        }, label: {
+                            Text("TV Shows")
+                               
+                        })
+                        .buttonStyle(PlainButtonStyle())
+                    
+                        Spacer()
+                        
+                        Button(action: {
+                            //
+                        }, label: {
+                            Text("Movies")
+                               
+                        })
+                        .buttonStyle(PlainButtonStyle())
                         
                         Spacer()
                         
-                        Text("Movies")
-                        
-                        Spacer()
-                        
-                        Text("My List")
+                        Button(action: {
+                            //
+                        }, label: {
+                            Text("My List")
+                               
+                        })
+                        .buttonStyle(PlainButtonStyle())
                     }
-                    .background(Color.red)
+                    .background(Color.black)
                     .padding(.leading, 10)
                     .padding(.trailing, 30)
                     
