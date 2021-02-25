@@ -21,51 +21,7 @@ struct  HomeView: View {
             ScrollView(showsIndicators: false) {
                 LazyVStack {
                    
-                    HStack{
-                        Button(action: {
-                            //
-                        }, label: {
-                            Image("netflix_logo")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50)
-                            
-                        })
-                        .buttonStyle(PlainButtonStyle())
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            //
-                        }, label: {
-                            Text("TV Shows")
-                               
-                        })
-                        .buttonStyle(PlainButtonStyle())
-                    
-                        Spacer()
-                        
-                        Button(action: {
-                            //
-                        }, label: {
-                            Text("Movies")
-                               
-                        })
-                        .buttonStyle(PlainButtonStyle())
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            //
-                        }, label: {
-                            Text("My List")
-                               
-                        })
-                        .buttonStyle(PlainButtonStyle())
-                    }
-                    .background(Color.black)
-                    .padding(.leading, 10)
-                    .padding(.trailing, 30)
+                    TopRowButtons()
                     
                     TopMoviePreview(movie: exampleMovie1)
                         .frame(width: screen.width)
@@ -104,5 +60,55 @@ struct  HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+struct TopRowButtons: View {
+    var body: some View {
+        HStack{
+            Button(action: {
+                //
+            }, label: {
+                Image("netflix_logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50)
+                
+            })
+            .buttonStyle(PlainButtonStyle())
+            
+            Spacer()
+            
+            Button(action: {
+                //
+            }, label: {
+                Text("TV Shows")
+                
+            })
+            .buttonStyle(PlainButtonStyle())
+            
+            Spacer()
+            
+            Button(action: {
+                //
+            }, label: {
+                Text("Movies")
+                
+            })
+            .buttonStyle(PlainButtonStyle())
+            
+            Spacer()
+            
+            Button(action: {
+                //
+            }, label: {
+                Text("My List")
+                
+            })
+            .buttonStyle(PlainButtonStyle())
+        }
+        .background(Color.black)
+        .padding(.leading, 10)
+        .padding(.trailing, 30)
     }
 }
