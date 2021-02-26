@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4F6F9825E96AA300399DE8 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F6F9725E96AA300399DE8 /* MovieDetail.swift */; };
 		FA5648B025B78F1D0036B21D /* WhitePauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5648AF25B78F1D0036B21D /* WhitePauseButton.swift */; };
 		FA5DF79F25AF104B00E3501B /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DF79E25AF104B00E3501B /* TopMoviePreview.swift */; };
 		FA613C9D25AF32B7002D6AFB /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA613C9C25AF32B7002D6AFB /* SmallVerticalButton.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA4F6F9725E96AA300399DE8 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		FA5648AF25B78F1D0036B21D /* WhitePauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePauseButton.swift; sourceTree = "<group>"; };
 		FA5DF79E25AF104B00E3501B /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		FA613C9C25AF32B7002D6AFB /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				FA96161125A8E966006B8F97 /* Assets.xcassets */,
 				FA96161625A8E966006B8F97 /* Info.plist */,
 				FA96161325A8E966006B8F97 /* Preview Content */,
+				FA4F6F9725E96AA300399DE8 /* MovieDetail.swift */,
 			);
 			path = netflixClone;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				FA96163125A8F001006B8F97 /* Movie.swift in Sources */,
 				FA96160E25A8E965006B8F97 /* netflixCloneApp.swift in Sources */,
 				FA613C9D25AF32B7002D6AFB /* SmallVerticalButton.swift in Sources */,
+				FA4F6F9825E96AA300399DE8 /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
