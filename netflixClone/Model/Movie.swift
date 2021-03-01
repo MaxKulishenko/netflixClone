@@ -19,4 +19,16 @@ struct Movie: Identifiable {
     var rating: String
     var numberOfSeasons: Int?
     
+    var numberOfSeasonsDisplay: String {
+        if let num = numberOfSeasons {
+            if num == 1 {
+                return "1 season"
+            } else {
+                return "\(num) seasons"
+            }
+        }
+        
+        return " "
+    }
+    
 }

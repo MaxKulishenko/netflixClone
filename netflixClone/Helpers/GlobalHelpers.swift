@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 let exampleMovie1 = Movie(id: UUID().uuidString, name: "DARK", thumbnailURL: URL(string:
-                                                                                    "https://picsum.photos/200/300")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA")
+    "https://picsum.photos/200/300")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA")
 let exampleMovie2 = Movie(id: UUID().uuidString, name: "Travelers", thumbnailURL: URL(string:
     "https://picsum.photos/200/300/")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA")
 let exampleMovie3 = Movie(id: UUID().uuidString, name: "Community", thumbnailURL: URL(string:

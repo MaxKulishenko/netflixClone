@@ -61,11 +61,11 @@ struct MoviewInfoSubheadline: View {
             Image(systemName: "hand.thumbsup.fill")
                 .foregroundColor(.white)
             
-            Text("Movie Year")
+            Text(String(movie.year))
             
-            Text("Rating")
+            Text(String(movie.rating))
             
-            Text("Seasons")
+            Text(movie.numberOfSeasonsDisplay)
             
         }
         .foregroundColor(.gray)
