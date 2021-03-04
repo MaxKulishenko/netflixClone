@@ -36,6 +36,8 @@ struct MovieDetail: View {
                             .frame(width: screen.width / 2.5)
                         
                         MoviewInfoSubheadline(movie: movie)
+                        
+                        Text("Watch Season 3 now")
                     }
                 }
                 
@@ -57,18 +59,48 @@ struct MoviewInfoSubheadline: View {
     var movie: Movie
     
     var body: some View {
-        HStack {
+        HStack(spacing: 20) {
             Image(systemName: "hand.thumbsup.fill")
                 .foregroundColor(.white)
             
             Text(String(movie.year))
             
-            Text(String(movie.rating))
+            RatingView(rating: movie.rating)
             
             Text(movie.numberOfSeasonsDisplay)
+            
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.gray)
+                    .frame(width: 30, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+              
+                Rectangle()
+                    .foregroundColor(.black)
+                    .frame(width: 28.3, height: 18, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Text("HD")
+                    .bold()
+                    .font(.system(size: 15))
+            }
             
         }
         .foregroundColor(.gray)
         .padding(.vertical, 6)
+    }
+}
+
+struct RatingView: View {
+    var rating: String
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .foregroundColor(.gray)
+            
+            Text(rating)
+                .foregroundColor(.white)
+                .font(.system(size: 12))
+                .bold()
+            
+        }
+        .frame(width: 50, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
 }
