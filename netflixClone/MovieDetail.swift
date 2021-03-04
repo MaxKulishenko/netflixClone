@@ -37,7 +37,11 @@ struct MovieDetail: View {
                         
                         MoviewInfoSubheadline(movie: movie)
                         
-                        Text("Watch Season 3 now")
+                        if movie.promotionHeadline != nil {
+                            Text(movie.promotionHeadline!)
+                                .bold()
+                                .font(.headline)
+                        }
                     }
                 }
                 
@@ -51,7 +55,7 @@ struct MovieDetail: View {
 
 struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail(movie: exampleMovie3)
+        MovieDetail(movie: exampleMovie2)
     }
 }
 
