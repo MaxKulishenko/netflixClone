@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct WhitePauseButton: View {
+struct PlayButton: View {
     
     var text: String
-    
     var imageName: String
+    var backgroundColor: Color = Color.white
     
     var action: () -> Void
     
@@ -34,8 +34,8 @@ struct WhitePauseButton: View {
                 Spacer()
             }
             .padding(.vertical, 6)
-            .foregroundColor(.black)
-            .background(Color.white)
+            .foregroundColor(backgroundColor == .white ? .black : .white)
+            .background(backgroundColor)
             .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
         })
     }
@@ -48,7 +48,7 @@ struct WhitePauseButton_Previews: PreviewProvider {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
               
             
-        WhitePauseButton(text: "Play",
+        PlayButton(text: "Play",
                          imageName: "play.fill") {
             print("Tapped")
         }
